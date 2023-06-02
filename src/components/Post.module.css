@@ -127,5 +127,7 @@
     background: var(--orange-700);
 }
 
-
+.commentList{
+    margin-top:2rem;
+}
 
