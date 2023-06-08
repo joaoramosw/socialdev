@@ -4,5 +4,8 @@ export function Avatar({}){
         <img className={props.hasBorder ? styles.avatarWithBorder : styles.avatar} 
         src={props.src}
         />
+        <img className={props.hasBorder ? styles.avatarWithBorder : styles.avatar} 
+        src={props.src}
+        />
     ) 
 }
