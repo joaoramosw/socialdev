@@ -25,7 +25,7 @@ export function Comment(){
                 
                 <footer>
                     <button>
-                        <HandsClapping size={15}/>
+                        <HandsClapping size={16}/>
                         Aplaudir <span>20</span>
                     </button>
                 </footer>
