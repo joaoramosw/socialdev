@@ -5,6 +5,26 @@ import { Post } from "./components/Post";
 import styles from './app.module.css';
 import './global.css';
 
+// author : {avatar_url:"" , name:"" , role: ""}
+// publishedAt: Date
+// content: String
+// Info que viriam do back-end provavelmente em formato de Markdown, 
+// evitar todo custo que o back-end retorne html , fica mais facil para ataques de TagScript por ex
+
+const posts = [
+  {
+    id:1 ,
+    author:{
+      avatarUrl: 'https://github.com/ojoaoramos',
+      name: 'João Ramos',
+      role: 'Full-stack Developer'
+    },
+    // content: [
+    //   --
+    // ]
+  }
+]
+
 
 export function App() {
   return (<div>   
