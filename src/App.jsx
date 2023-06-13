@@ -11,21 +11,35 @@ import './global.css';
 // Info que viriam do back-end provavelmente em formato de Markdown, 
 // evitar todo custo que o back-end retorne html , fica mais facil para ataques de TagScript por ex
 
-// const posts = [
-//   {
-//     id:1 ,
-//     author:{
-//       avatarUrl: 'https://github.com/ojoaoramos',
-//       name: 'João Ramos',
-//       role: 'Full-stack Developer'
-//     },
-//     content: [
-//       {type: 'paragraph' , content :'',}
-//       {type: 'link' , content :'',}
-//       {type: 'paragraph' , content :'',}
-//     ]
-//   }
-// ]
+ const posts = [
+   {
+    id:1 ,
+    author:{
+       avatarUrl: 'https://github.com/ojoaoramos',
+       name: 'João Ramos',
+      role: 'Full-stack Developer'
+     },
+     content: [
+      {type: 'paragraph' , content :'',}
+       {type: 'link' , content :'',}
+       {type: 'paragraph' , content :'',}
+     ]
+    }
+
+    {
+      id:2 ,
+      author:{
+         avatarUrl: 'https://github.com/oluisena',
+         name: 'Luis Sena',
+        role: 'Full-stack Developer'
+       },
+       content: [
+        {type: 'paragraph' , content :'',}
+         {type: 'link' , content :'',}
+         {type: 'paragraph' , content :'',}
+       ]
+      }
+  ]
 
 
 export function App() {
