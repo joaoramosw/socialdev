@@ -15,7 +15,7 @@ import './global.css';
    {
     id:1 ,
     author:{
-       avatarUrl: 'https://github.com/ojoaoramos',
+       avatarUrl: 'https://github.com/ojoaoramos.png',
        name: 'João Ramos',
       role: 'Full-stack Developer'
      },
@@ -30,7 +30,7 @@ import './global.css';
     {
       id:1 ,
       author:{
-         avatarUrl: 'https://github.com/diego3g',
+         avatarUrl: 'https://github.com/diego3g.png',
          name: 'Diego Fernandes',
         role: 'CTO'
        },
