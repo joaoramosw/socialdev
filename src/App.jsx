@@ -32,12 +32,12 @@ import './global.css';
       author:{
          avatarUrl: 'https://github.com/diego3g.png',
          name: 'Diego Fernandes',
-        role: 'CTO'
+        role: 'CTO @Rocketseat'
        },
        content: [
-        {type: 'paragraph' , content :'Fala galeraa 👋',},
-         {type: 'link' , content :'joaoramos.dev/socialdev',},
-         {type: 'paragraph' , content :'Acabei de subir mais um projeto no meu portifolio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é Social Dev 🚀',}
+        {type: 'paragraph' , content :'Opa pessoal',},
+         {type: 'link' , content :'ignite/nlw',},
+         {type: 'paragraph' , content :'O ignite está com uma promoção muito atrativa !',}
        ],
   
        publishedAt: new Date ('2023-06-12 17:40:00')
@@ -55,9 +55,9 @@ export function App() {
         {posts.map(posts =>{
           return (
           <Post
-          author={posts.author}
-          content={posts.content}
-          publishedAt={posts.publishedAt}
+            author={posts.author}
+            content={posts.content}
+            publishedAt={posts.publishedAt}
           />
           )
         })}
