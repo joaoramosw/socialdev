@@ -1,7 +1,8 @@
 import styles from './post.module.css'
 import { Comment } from './Comment'
 import { Avatar } from './Avatar'
-export function Post(){
+export function Post(props){
+    console.log(props)
     return (
         <article className= {styles.post} >
             <header>
@@ -35,10 +36,6 @@ export function Post(){
 
             <div className={styles.commentList}>
                 <Comment/>
-                <Comment/>
-                <Comment/>
-                <Comment/>
-        
             </div>
             
         </article>

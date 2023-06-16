@@ -20,39 +20,28 @@ import './global.css';
       role: 'Full-stack Developer'
      },
      content: [
-      {type: 'paragraph' , content :'',}
-       {type: 'link' , content :'',}
-       {type: 'paragraph' , content :'',}
-     ]
-    }
+      {type: 'paragraph' , content :'Fala galeraa 👋',},
+       {type: 'link' , content :'joaoramos.dev/socialdev',},
+       {type: 'paragraph' , content :'Acabei de subir mais um projeto no meu portifolio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é Social Dev 🚀'},
+     ],
+     publishedAt: new Date ('2023-06-15 22:00:00'),
+    },
 
     {
-      id:2 ,
+      id:1 ,
       author:{
-         avatarUrl: 'https://github.com/oluisena',
-         name: 'Luis Sena',
-        role: 'Full-stack Developer'
+         avatarUrl: 'https://github.com/diego3g',
+         name: 'Diego Fernandes',
+        role: 'CTO'
        },
        content: [
-        {type: 'paragraph' , content :'',}
-         {type: 'link' , content :'',}
-         {type: 'paragraph' , content :'',}
-       ]
-      }
-
-      {
-        id:3,
-        author:{
-           avatarUrl: 'https://github.com/guioliveira',
-           name: 'Guilherme oliveira',
-          role: 'back-end Developer'
-         },
-         content: [
-          {type: 'paragraph' , content :'',}
-           {type: 'link' , content :'',}
-           {type: 'paragraph' , content :'',}
-         ]
-        }
+        {type: 'paragraph' , content :'Fala galeraa 👋',},
+         {type: 'link' , content :'joaoramos.dev/socialdev',},
+         {type: 'paragraph' , content :'Acabei de subir mais um projeto no meu portifolio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é Social Dev 🚀',}
+       ],
+  
+       publishedAt: new Date ('2023-06-12 17:40:00')
+      },
   ]
 
 
@@ -61,26 +50,18 @@ export function App() {
     <Header />
     <div className={styles.wrapper}>
        <Sidebar/>
-       <main>  
-          <Post 
-            author="João Victor"
-            content=""
-          /> 
-          <Post 
-            author="João Victor"
-            content=""
+      <main>           
+        {/* forEach - not for situation , because nothing is return in screen */}
+        {posts.map(posts =>{
+          return (
+          <Post
+          author={posts.author}
+          content={posts.content}
+          publishedAt={posts.publishedAt}
           />
-          <Post 
-            author="João Victor"
-            content="Um post muito divertido e Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe omnis, quos illo perspiciatis ex magnam eos, ad doloribus laboriosam sed iure non quidem odit reprehenderit minus. Quibusdam, adipisci dolorum!"
-          />  
-          <Post 
-            author="João Victor"
-            content="Um post muito divertido e Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe omnis, quos illo perspiciatis ex magnam eos, ad doloribus laboriosam sed iure non quidem odit reprehenderit minus. Quibusdam, adipisci dolorum!"
-          />  
-          
-      
-         </main>
+          )
+        })}
+      </main>
     </div>
   </div>  
   )
