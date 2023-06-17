@@ -28,7 +28,7 @@ import './global.css';
     },
 
     {
-      id:1 ,
+      id:2 ,
       author:{
          avatarUrl: 'https://github.com/diego3g.png',
          name: 'Diego Fernandes',
