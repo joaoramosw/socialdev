@@ -46,7 +46,15 @@ export function Post({author , publishedAt , content})
                             <strong>{author.name}</strong>
                             <span>{author.role}</span> 
                         </div>
-                </div>     
+                </div>    
+
+                <div className={styles.author}>
+                    <Avatar src={author.avatarUrl}/>
+                        <div className={styles.authorInfo}>
+                            <strong>{author.name}</strong>
+                            <span>{author.role}</span> 
+                        </div>
+                </div> 
 
               <time title={publishedAt.toString(dateFormat)} dateTime={publishedAt.toISOString()} >
                 {dateFormatRelativeNow}
