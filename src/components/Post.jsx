@@ -56,9 +56,13 @@ export function Post({author , publishedAt , content})
 
             <div className={styles.content}>
                 {content.map(line => {
-                    if (line.type === 'paragraph'){
+                    if (line.type === 'paragraph')
+                    {
                         return <p>{line.content}</p>;
-                    } else if (line.type ==='line'){
+
+                    } else if (line.type ==='line')
+                    
+                    {
                         return <p><a>{line.content}</a></p>
                     };
                   }
