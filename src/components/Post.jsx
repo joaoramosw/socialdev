@@ -58,10 +58,10 @@ export function Post({author , publishedAt , content})
                 {content.map(line => {
                     if (line.type === 'paragraph')
                     {
-                        return <p>{line.content}</p>;
+                        return <p key={line.content}>{line.content}</p>;
                     } else if (line.type ==='line')
                     {
-                        return <p><a>{line.content}</a></p>
+                        return <p key={line.content}><a>{line.content}</a></p>
                     };
                   }
                  )
@@ -83,8 +83,10 @@ export function Post({author , publishedAt , content})
 
             <div className={styles.commentList}>
                 {comments.map(comment =>{
-                    return <Comment key={comments.id}
-                     content={comment}/>
+                    return <Comment 
+                    key={comment}
+                    content={comment}
+                    />
                 })}
             </div>
             
