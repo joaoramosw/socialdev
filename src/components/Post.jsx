@@ -38,7 +38,7 @@ export function Post({author , publishedAt , content})
     }
 
 
-    function deleteComment(comment){
+    function deleteComment({comment}){
         console.log(`Deletar comentário ${comment}`)
 
     }
@@ -92,7 +92,7 @@ export function Post({author , publishedAt , content})
                     return <Comment 
                     key={comment}
                     content={comment}
-                    deleteComment={deleteComment}
+                    onDeleteComment={deleteComment}
                     />
                 })}
             </div>
