@@ -114,8 +114,15 @@
     
 }
 
-.commentForm button:hover {
+
+
+.commentForm button:not(:disabled):hover {
     background: var(--orange-700);
+}
+
+.commentForm button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .commentList{
